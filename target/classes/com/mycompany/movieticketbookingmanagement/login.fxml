@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="427.0" prefWidth="663.0" stylesheets="@login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.movieticketbookingmanagement.controller.LoginController">
+   <AnchorPane fx:id="singin_form" layoutX="10.0" layoutY="10.0" prefHeight="457.3333333333333" prefWidth="693.3333333333334" stylesheets="@login.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+         <AnchorPane prefHeight="427.3333333333333" prefWidth="663.3333333333334" stylesheets="@login.css">
+            <children>
+               <VBox alignment="CENTER" prefHeight="427.3333333333333" prefWidth="663.3333333333334" spacing="20" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <children>
+                     <HBox alignment="CENTER" prefHeight="427.0" prefWidth="663.0" spacing="20">
+                        <children>
+                           <VBox alignment="CENTER" prefHeight="401.0" prefWidth="356.0" spacing="10" style="-fx-background-color: white; -fx-padding: 20;">
+                              <children>
+                                 <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Sign In" />
+                                 <HBox spacing="10" />
+                                 <Label text="Use your username and password!" />
+                                 <TextField fx:id="singin_username" onAction="#sigin" promptText="Username" />
+                                 <PasswordField fx:id="singin_password" onAction="#sigin" promptText="Password" />
+                                 <Button fx:id="singin_btn" onAction="#sigin" prefHeight="25.0" prefWidth="101.0" styleClass="simgIn-btn" stylesheets="@login.css" text="SIGN IN" />
+                              </children>
+                           </VBox>
+                           <VBox fx:id="layer1" alignment="CENTER" prefHeight="401.0" prefWidth="391.0" spacing="10" styleClass="vbox-right" stylesheets="@login.css">
+                              <children>
+                                 <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: white;" text="Hello, Friend!" />
+                                 <Label alignment="CENTER" prefHeight="28.0" prefWidth="192.0" style="-fx-text-fill: white;" text="Don't have account? Register now! " textAlignment="CENTER" />
+                                 <Button fx:id="singin_createAccount" onAction="#switchFrom" prefHeight="28.0" prefWidth="101.0" styleClass="simgUp-btn" stylesheets="@login.css" text="SIGN UP" />
+                              </children>
+                           </VBox>
+                        </children>
+                     </HBox>
+                  </children>
+               </VBox>
+            </children>
+         </AnchorPane>
+         <Button fx:id="singin_close" alignment="CENTER" layoutX="626.0" mnemonicParsing="false" onAction="#singin_close" styleClass="close" stylesheets="@login.css">
+            <graphic>
+               <FontAwesomeIconView fill="WHITE" glyphName="CLOSE" size="14" textAlignment="CENTER" wrappingWidth="20.761885166168213" />
+            </graphic>
+         </Button>
+         <Button fx:id="singin_minimaze" alignment="CENTER" layoutX="589.0" mnemonicParsing="false" onAction="#singin_minimaze" styleClass="minimaze" stylesheets="@login.css">
+            <graphic>
+               <FontAwesomeIconView fill="WHITE" glyphName="MINUS" size="14" textAlignment="CENTER" wrappingWidth="20.761885166168213" />
+            </graphic>
+         </Button>
+      </children>
+   </AnchorPane>
+   <AnchorPane fx:id="singup_form" layoutX="20.0" layoutY="20.0" prefHeight="457.3333333333333" prefWidth="693.3333333333334" stylesheets="@login.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+         <AnchorPane prefHeight="427.3333333333333" prefWidth="663.3333333333334">
+            <children>
+               <VBox alignment="CENTER" prefHeight="427.3333333333333" prefWidth="663.3333333333334" spacing="20" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <children>
+                     <HBox alignment="CENTER" prefHeight="427.0" prefWidth="663.0" spacing="20">
+                        <children>
+                           <VBox alignment="CENTER" prefHeight="401.0" prefWidth="314.0" spacing="10" styleClass="vbox-left" stylesheets="@login.css">
+                              <children>
+                                 <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: white;" text="Welcome, Back!" />
+                                 <Label alignment="CENTER" prefHeight="28.0" prefWidth="192.0" style="-fx-text-fill: white;" text="You have account, sign in here!" textAlignment="CENTER" />
+                                 <Button fx:id="singup_createAccaount" onAction="#switchFrom" prefHeight="28.0" prefWidth="101.0" styleClass="simgUp-btn" stylesheets="@login.css" text="SIGN IN" />
+                              </children>
+                           </VBox>
+                           <VBox alignment="CENTER" prefHeight="401.0" prefWidth="356.0" spacing="10" style="-fx-background-color: white; -fx-padding: 20;">
+                              <children>
+                                 <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Create Account" />
+                                 <HBox spacing="10" />
+                                 <Label text="Register in here!" />
+                                 <TextField fx:id="singup_email" promptText="Email" />
+                                 <TextField fx:id="singup_username" promptText="Username" />
+                                 <PasswordField fx:id="singup_password" promptText="Password" />
+                                 <Button fx:id="singup_btn" onAction="#singup" prefHeight="25.0" prefWidth="101.0" styleClass="simgIn-btn" stylesheets="@login.css" text="SIGN UP" />
+                              </children>
+                           </VBox>
+                        </children>
+                     </HBox>
+                  </children>
+               </VBox>
+            </children>
+         </AnchorPane>
+         <Button fx:id="singup_close" alignment="CENTER" layoutX="626.0" mnemonicParsing="false" onAction="#singup_close" styleClass="close" stylesheets="@login.css">
+            <graphic>
+               <FontAwesomeIconView glyphName="CLOSE" size="14" textAlignment="CENTER" wrappingWidth="20.761885166168213" />
+            </graphic>
+         </Button>
+         <Button fx:id="singup_minimaze" alignment="CENTER" layoutX="589.0" mnemonicParsing="false" onAction="#singup_minimaze" styleClass="minimaze" stylesheets="@login.css">
+            <graphic>
+               <FontAwesomeIconView glyphName="MINUS" size="14" textAlignment="CENTER" wrappingWidth="20.761885166168213" />
+            </graphic>
+         </Button>
+      </children>
+   </AnchorPane>
+</AnchorPane>

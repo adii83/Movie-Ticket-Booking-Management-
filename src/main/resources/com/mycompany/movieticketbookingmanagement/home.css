@@ -1,0 +1,18 @@
+.log{
+    -fx-background-color: white;
+}
+
+close,
+.minimaze {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-border-radius: 50%;
+}
+
+.close:hover {
+    -fx-background-color: #ff4d4d; /* Warna merah saat hover */
+}
+
+.minimaze:hover {
+    -fx-background-color: #ff260065; /* Warna kuning saat hover */
+}

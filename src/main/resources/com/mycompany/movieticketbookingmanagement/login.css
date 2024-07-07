@@ -1,0 +1,54 @@
+.vbox-right {
+  -fx-background-radius: 80px 0 0 80px;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.35), 15, 0, 0, 5);
+  -fx-padding: 20;
+  -fx-background-color: #3271d0;
+}
+.vbox-left {
+  -fx-background-radius: 0 80px 80px 0;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.35), 15, 0, 0, 5);
+  -fx-padding: 20;
+  -fx-background-color: #3271d0;
+}
+
+.simgIn-btn {
+  -fx-text-fill: white;
+  -fx-background-color: #3271d0;
+  -fx-background-radius: 10px;
+}
+
+.simgIn-btn:hover {
+  -fx-background-color: #2f51b7;
+}
+
+.simgUp-btn {
+  -fx-text-fill: white;
+  -fx-background-color: transparent;
+  -fx-border-color: white;
+  -fx-border-radius: 10px;
+  -fx-background-radius: 10px;
+}
+
+.simgUp-btn:hover {
+  -fx-background-color: #2f51b7;
+}
+
+.close{
+  -fx-background-color: transparent;
+  -fx-cursor: hand;
+  -fx-border-radius: 50%;
+}
+.minimaze {
+  -fx-background-color: transparent;
+  -fx-cursor: hand;
+  -fx-border-radius: 50%;
+}
+
+.close:hover {
+  -fx-background-color: #ff4d4d; /* Warna merah saat hover */
+}
+
+.minimaze:hover {
+  -fx-background-color: #ff4d4d; /* Warna kuning saat hover */
+}
+

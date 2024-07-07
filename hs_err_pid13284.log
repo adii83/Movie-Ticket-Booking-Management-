@@ -1,0 +1,36 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_STACK_OVERFLOW (0xc00000fd) at pc=0x00007ffbefb4a0e3, pid=13284, tid=14636
+#
+# JRE version: OpenJDK Runtime Environment Temurin-17.0.11+9 (17.0.11+9) (build 17.0.11+9)
+# Java VM: OpenJDK 64-Bit Server VM Temurin-17.0.11+9 (17.0.11+9, mixed mode, tiered, compressed oops, compressed class ptrs, parallel gc, windows-amd64)
+# Problematic frame:
+# V  [jvm.dll+0x38a0e3]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   https://github.com/adoptium/adoptium-support/issues
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: --add-modules=ALL-SYSTEM --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/sun.nio.fs=ALL-UNNAMED -Declipse.application=org.eclipse.jdt.ls.core.id1 -Dosgi.bundles.defaultStartLevel=4 -Declipse.product=org.eclipse.jdt.ls.core.product -Djava.import.generatesMetadataFilesAtProjectRoot=false -DDetectVMInstallationsJob.disabled=true -Dfile.encoding=utf8 -XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -Xlog:disable -javaagent:c:\Users\match\.cursor\extensions\redhat.java-1.32.0-win32-x64\lombok\lombok-1.18.33.jar -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=c:\Users\match\AppData\Roaming\Cursor\User\workspaceStorage\a9ddf05bb256a53f2bb4febab6376a0f\redhat.java -Daether.dependencyCollector.impl=bf c:\Users\match\.cursor\extensions\redhat.java-1.32.0-win32-x64\server\plugins\org.eclipse.equinox.launcher_1.6.900.v20240613-2009.jar -configuration c:\Users\match\AppData\Roaming\Cursor\User\globalStorage\redhat.java\1.32.0\config_win -data c:\Users\match\AppData\Roaming\Cursor\User\workspaceStorage\a9ddf05bb256a53f2bb4febab6376a0f\redhat.java\jdt_ws --pipe=\\.\pipe\lsp-f5b9761b8ff02958e2026198254f6d8d-sock
+
+Host: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz, 8 cores, 7G,  Windows 11 , 64 bit Build 22621 (10.0.22621.3672)
+Time: Fri Jun 28 03:25:45 2024 SE Asia Standard Time elapsed time: 3.030228 seconds (0d 0h 0m 3s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001ec93912b40):  JavaThread "Framework Event Dispatcher: Equinox Container: 44edbc8f-c384-4442-abc5-1631f80c6b81" daemon [_thread_in_vm, id=14636, stack(0x0000009be2700000,0x0000009be2800000)]
+
+Stack: [0x0000009be2700000,0x0000009be2800000],  sp=0x0000009be27ff620,  free space=1021k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x38a0e3]
+V  [jvm.dll+0x67d342]
+V  [jvm.dll+0x38ad3b]
+V  [jvm.dll+0x38afc7]
+V  [jvm.dll+0x411731]
+V  [jvm.dll+0x7e9d07]
+V  [jvm.dll+0x7e410a]
